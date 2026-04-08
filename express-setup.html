@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express Setup | OM24 Global Group</title>
+    <meta name="description" content="Launch your fund in 30 days with OM24 Express Setup. Guaranteed timeline, dedicated team, and expedited regulatory filing.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        header { background: #1a365d; color: white; padding: 1rem 0; }
+        header .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: bold; }
+        .hero { background: linear-gradient(135deg, #c53030 0%, #e53e3e 100%); color: white; padding: 4rem 0; text-align: center; }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.25rem; opacity: 0.9; max-width: 600px; margin: 0 auto; }
+        .comparison { padding: 4rem 0; background: #f7fafc; }
+        .comparison-table { width: 100%; border-collapse: collapse; margin-top: 2rem; background: white; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .comparison-table th, .comparison-table td { padding: 1.25rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
+        .comparison-table th { background: #1a365d; color: white; }
+        .comparison-table tr:hover { background: #f7fafc; }
+        .highlight { background: #fed7d7 !important; font-weight: bold; }
+        .pricing { padding: 4rem 0; }
+        .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem; }
+        .pricing-card { background: white; border-radius: 8px; padding: 2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-left: 4px solid #e53e3e; }
+        .pricing-card h3 { color: #1a365d; margin-bottom: 0.5rem; }
+        .price-compare { margin: 1rem 0; }
+        .price-compare .standard { text-decoration: line-through; color: #a0aec0; font-size: 1.25rem; }
+        .price-compare .express { color: #e53e3e; font-size: 2rem; font-weight: bold; }
+        .savings { color: #48bb78; font-weight: bold; margin-top: 0.5rem; }
+        .btn { display: inline-block; background: #e53e3e; color: white; padding: 1rem 2rem; text-decoration: none; border-radius: 4px; font-weight: bold; margin-top: 1rem; }
+        .btn:hover { background: #c53030; }
+        .when-to-choose { padding: 4rem 0; background: #f7fafc; }
+        .choose-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem; margin-top: 2rem; }
+        .choose-card { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .choose-card h3 { color: #1a365d; margin-bottom: 1rem; }
+        .choose-card ul { list-style: none; }
+        .choose-card li { padding: 0.75rem 0; padding-left: 1.5rem; position: relative; }
+        .choose-card li:before { content: "→"; position: absolute; left: 0; color: #48bb78; font-weight: bold; }
+        .guarantee { padding: 4rem 0; text-align: center; background: white; }
+        .guarantee-box { background: #f0fff4; border: 2px solid #48bb78; border-radius: 8px; padding: 2rem; max-width: 800px; margin: 2rem auto; }
+        .guarantee-box h3 { color: #22543d; margin-bottom: 1rem; }
+        .faq { padding: 4rem 0; background: #f7fafc; }
+        .faq-item { margin-bottom: 1.5rem; padding: 1.5rem; background: white; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .faq-item h4 { color: #1a365d; margin-bottom: 0.5rem; }
+        footer { background: #1a365d; color: white; text-align: center; padding: 2rem 0; }
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 1.75rem; }
+            .comparison-table { font-size: 0.875rem; }
+            .comparison-table th, .comparison-table td { padding: 0.75rem; }
+            .choose-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">OM24 Global Group</div>
+            <nav><a href="/" style="color: white; text-decoration: none;">Home</a></nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Launch in 30 Days, Not Months</h1>
+            <p>When timing is everything, our Express Setup gets your fund to market in 30 days flat.</p>
+        </div>
+    </section>
+
+    <section class="comparison">
+        <div class="container">
+            <h2 style="text-align: center; color: #1a365d;">Standard vs Express Comparison</h2>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Standard Setup</th>
+                        <th>Express Setup</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="highlight">
+                        <td>Timeline</td>
+                        <td>4-6 weeks</td>
+                        <td>30 days guaranteed</td>
+                    </tr>
+                    <tr>
+                        <td>Pricing</td>
+                        <td>Base rates</td>
+                        <td>Base rate + 50% premium</td>
+                    </tr>
+                    <tr>
+                        <td>Dedicated Team</td>
+                        <td>Shared resources</td>
+                        <td>Dedicated Express team</td>
+                    </tr>
+                    <tr>
+                        <td>Weekly Updates</td>
+                        <td>Standard</td>
+                        <td>Daily during final week</td>
+                    </tr>
+                    <tr>
+                        <td>Priority Filing</td>
+                        <td>Standard queue</td>
+                        <td>Expedited processing</td>
+                    </tr>
+                    <tr>
+                        <td>24/7 Support</td>
+                        <td>Business hours</td>
+                        <td>Round-the-clock availability</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="pricing">
+        <div class="container">
+            <h2 style="text-align: center; color: #1a365d;">Express Setup Pricing</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Tier 1: Cayman Exempted Fund</h3>
+                    <div class="price-compare">
+                        <div class="standard">Standard: $15,000</div>
+                        <div class="express">Express: $22,500</div>
+                        <div class="savings">You save: 4-5 weeks of lost management fees</div>
+                    </div>
+                    <p>30-day guaranteed setup for single Cayman exempted funds. Perfect for emerging managers with committed capital waiting.</p>
+                    <a href="https://buy.stripe.com/eVq28s4vU4sZaer23HeUU01" class="btn">Get Express Quote</a>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Tier 2: Multi-Structure Setup</h3>
+                    <div class="price-compare">
+                        <div class="standard">Standard: $35,000</div>
+                        <div class="express">Express: $52,500</div>
+                        <div class="savings">You save: Complex structures launched in record time</div>
+                    </div>
+                    <p>30-day guaranteed setup for multi-jurisdiction or complex fund structures. Includes parallel vehicles and feeder funds.</p>
+                    <a href="https://buy.stripe.com/8x2bJ2aUi9Njcmz5fTeUU00" class="btn">Get Express Quote</a>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Tier 3: Institutional / Custom</h3>
+                    <div class="price-compare">
+                        <div class="standard">Standard: Custom pricing</div>
+                        <div class="express">Express: Custom + 50%</div>
+                        <div class="savings">You save: Bespoke structures without the wait</div>
+                    </div>
+                    <p>30-day guaranteed setup for institutional mandates, white-label platforms, and bespoke fund structures.</p>
+                    <a href="mailto:express@om24global.com" class="btn">Contact for Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="when-to-choose">
+        <div class="container">
+            <h2 style="text-align: center; color: #1a365d;">When to Choose Express Setup</h2>
+            <div class="choose-grid">
+                <div class="choose-card">
+                    <h3>Choose Express When:</h3>
+                    <ul>
+                        <li>You have committed capital waiting</li>
+                        <li>You're targeting a specific launch window</li>
+                        <li>You're competing for time-sensitive opportunities</li>
+                        <li>You've promised your first close date</li>
+                        <li>You're managing multiple concurrent launches</li>
+                    </ul>
+                </div>
+
+                <div class="choose-card">
+                    <h3>Standard Setup May Be Fine When:</h3>
+                    <ul>
+                        <li>Your timeline is flexible (6+ weeks acceptable)</li>
+                        <li>Cost is a primary concern</li>
+                        <li>You're still finalizing investment strategy</li>
+                        <li>You haven't secured initial commitments yet</li>
+                        <li>You're planning well in advance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="guarantee">
+        <div class="container">
+            <h2 style="color: #1a365d;">Our 30-Day Delivery Guarantee</h2>
+            <div class="guarantee-box">
+                <h3>What We Guarantee:</h3>
+                <p><strong>✓ Document Drafting Complete</strong> — All fund documents drafted by Day 20</p>
+                <p><strong>✓ Regulatory Filing Submitted</strong> — CIMA application filed by Day 25</p>
+                <p><strong>✓ Fund Ready to Accept Capital</strong> — Operational by Day 30</p>
+                <p><strong>✓ Daily Updates Final Week</strong> — Know exactly where we stand</p>
+                <p><strong>✓ 24/7 Availability</strong> — Express team on call</p>
+                <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;">*Assumes timely client responses. Delays in feedback may extend timeline.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <h2 style="text-align: center; color: #1a365d; margin-bottom: 2rem;">Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <h4>Is 30 days really possible for a full fund setup?</h4>
+                <p>Yes. We've completed 40+ Express setups with a 100% on-time delivery record. The key is having your strategy finalized and being responsive during the process.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>What if we miss the 30-day deadline?</h4>
+                <p>If the delay is due to our team, we waive 25% of the setup fee. If delays are due to client response times, we work with you to establish a new realistic timeline.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>Do we sacrifice quality for speed?</h4>
+                <p>Not at all. Express Setup uses the same rigorous processes and quality controls as Standard. We achieve speed through dedicated resources and parallel workstreams, not shortcuts.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Ready to launch fast? Contact express@om24global.com</p>
+            <p style="margin-top: 1rem; opacity: 0.8;">© 2024 OM24 Global Group. All rights reserved. | FSC Licensed</p>
+        </div>
+    </footer>
+</body>
+</html>
